@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="CSS\HomePageCSS.css">
+</head>
+<body onload="checkEdits()">
+
+  <div class="topnav">
+    <a href="DSTKHomepage.html" class="active">DSTK Web App</a>
+    <div id="myLinks">
+      <a href="DSTKHomepage.html">Home</a>
+      <a href="">About/FAQ</a>
+      <a href="">Contact</a>
+    </div>
+    <a class="activelink">Employment</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="intro" id="edit" contenteditable="true">
+    Hi my name is Alishia and I am Down Syndrome, here are some details about Down Syndrome and strategies to help me be included
+  </div>
+<input type="button" class="savetext" value="save my edits" onclick="saveEdits()"/>
+<div class="updatetext" id="update"> - Edit the text and click to save for next time</div>
+
+<div class="rowlayout">
+  <div class="column">
+    <p>Practical strategies<p>
+      <button class="collapsible">Attention</button>
+      <div class="content" id="myLinks">
+        <p>TEST</p>
+      </div>
+      <button class="collapsible">Memory</button>
+      <button class="collapsible">Information Processing</button>
+      <button class="collapsible">Motivation</button>
+    </div>
+  <div class="column">
+    <p>Down Syndrome information<p>
+      <button class="collapsible">Spoken Communication</button>
+      <button class="collapsible">Written Communication</button>
+      <button class="collapsible">Other Forms of Communication</button>
+  </div>
+</div>
+
+<form>
+  <input class="cancelbtn" type="button" value="Go Back" onclick="history.back()">
+</form>
+
+<script src="JS\DSTKJava.js"></script>
+</body>
+</html>

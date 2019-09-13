@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="CSS\HomePageCSS.css">
+</head>
+<body>
+
+<div class="topnav">
+  <a href="DSTKHomepage.html" class="active">DSTK Web App</a>
+  <div id="myLinks">
+    <a href="DSTKAccountPage.html">Account</a>
+    <a href="">About/FAQ</a>
+    <a href="">Contact</a>
+  </div>
+  <a class="activelink">Home</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div>
+  <p>Welcome to the Down Syndrome Toolkit App</p>
+</div>
+
+<div class="newuser">
+  <p>New here?</p>
+  <button class="createacc"><a href="DSTKCreateAccount.html">Create an account here</a></button>
+</div>
+
+<form>
+<div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw">
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+
+    <button type="submit"><a href="DSTKAccountPage.html">Login</a></button>
+    <button class="psw"><a href="">Forgot password</a></button>
+  </div>
+
+  <div class="container">
+    <button type="button" class="cancelbtn"><a href="">Cancel</a></button>
+  </div>
+</form>
+<script src="JS\DSTKJava.js"></script>
+</body>
+</html>
